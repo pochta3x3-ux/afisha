@@ -2,6 +2,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
 <title>АФИША ГОРОДА</title>
 
 <style>
@@ -33,6 +38,12 @@ margin-bottom:10px;
 font-size:18px;
 box-shadow:0 2px 5px rgba(0,0,0,0.1);
 cursor:pointer;
+transition:0.2s;
+}
+
+.category:hover{
+transform:scale(1.02);
+background:#f9f9f9;
 }
 
 </style>
@@ -46,27 +57,35 @@ cursor:pointer;
 
 <div class="container">
 
-<div class="category">👶 Детские кружки</div>
+<div class="category" onclick="openCategory('Детские кружки')">👶 Детские кружки</div>
 
-<div class="category">🏫 Детские садики</div>
+<div class="category" onclick="openCategory('Детские садики')">🏫 Детские садики</div>
 
-<div class="category">⚽ Спортивные секции</div>
+<div class="category" onclick="openCategory('Спортивные секции')">⚽ Спортивные секции</div>
 
-<div class="category">💄 Для девушек</div>
+<div class="category" onclick="openCategory('Для девушек')">💄 Для девушек</div>
 
-<div class="category">🧔 Для мужчин</div>
+<div class="category" onclick="openCategory('Для мужчин')">🧔 Для мужчин</div>
 
-<div class="category">🏢 Услуги бизнеса</div>
+<div class="category" onclick="openCategory('Услуги бизнеса')">🏢 Услуги бизнеса</div>
 
-<div class="category">🧖 Сауны</div>
+<div class="category" onclick="openCategory('Сауны')">🧖 Сауны</div>
 
-<div class="category">🚗 Ремонт авто</div>
+<div class="category" onclick="openCategory('Ремонт авто')">🚗 Ремонт авто</div>
 
-<div class="category">🛍 Продам</div>
+<div class="category" onclick="openCategory('Продам')">🛍 Продам</div>
 
-<div class="category">🔎 Куплю</div>
+<div class="category" onclick="openCategory('Куплю')">🔎 Куплю</div>
 
 </div>
+
+<script>
+
+function openCategory(name){
+alert("Вы открыли категорию: " + name);
+}
+
+</script>
 
 </body>
 </html>
