@@ -71,7 +71,15 @@ cursor:pointer;
 </div>
 
 <script>
+
 Telegram.WebApp.expand();
+
+document.querySelectorAll(".category").forEach(function(item){
+    item.onclick = function(){
+        alert("Здесь будет список объявлений");
+    }
+})
+
 </script>
 
 </body>
